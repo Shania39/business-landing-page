@@ -1,0 +1,245 @@
+:root {
+  font-family: system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #333;
+  background-color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  color: #333;
+  overflow-x: hidden;
+}
+
+a {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0b5ed7;
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.bg-gradient {
+  background: linear-gradient(135deg, #e8f0f8 0%, #f5f9fc 100%);
+}
+
+.hero-image-container {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.hero-image-container img {
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.hero-image-container:hover img {
+  transform: scale(1.02);
+}
+
+.stat-box {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px);
+  border-radius: 12px !important;
+  padding: 16px 28px !important;
+}
+
+.stat-box small {
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+
+.stat-box strong {
+  font-size: 1.5rem;
+  display: block;
+  margin: 4px 0;
+}
+
+/* Service Cards */
+.service-card {
+  transition: all 0.3s ease;
+  border: 1px solid #f0f0f0;
+  cursor: pointer;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+.service-card .card-title {
+  color: #1a1a1a;
+  margin-top: 1rem;
+  font-size: 1.25rem;
+}
+
+.service-card .card-text {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.service-card .btn-primary {
+  background-color: #0066cc;
+  border-color: #0066cc;
+  color: white;
+  margin-top: 1rem;
+}
+
+.service-card .btn-primary:hover {
+  background-color: #0052a3;
+  border-color: #0052a3;
+  text-decoration: none;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.navbar-brand {
+  font-size: 1.1rem;
+}
+
+.navbar-brand strong {
+  color: #0066cc;
+}
+
+.nav-link {
+  color: #666 !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #0066cc !important;
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: #0066cc;
+  border-color: #0066cc;
+  color: white;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: #0052a3;
+  border-color: #0052a3;
+}
+
+.btn-dark {
+  background-color: #1a1a1a;
+  border-color: #1a1a1a;
+  font-weight: 600;
+  padding: 12px 32px;
+}
+
+.btn-dark:hover {
+  background-color: #0d0d0d;
+  border-color: #0d0d0d;
+}
+
+.btn-outline-primary {
+  color: #0066cc;
+  border-color: #0066cc;
+  background-color: transparent;
+}
+
+.btn-outline-primary:hover {
+  background-color: #0066cc;
+  border-color: #0066cc;
+  color: white;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #1a1a1a;
+  font-weight: 700;
+}
+
+.display-4 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.display-5 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+.text-primary {
+  color: #0066cc !important;
+}
+
+.text-muted {
+  color: #666 !important;
+}
+
+.lead {
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* Sections */
+section {
+  padding: 60px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 1.75rem;
+  }
+
+  .display-5 {
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .service-card {
+    margin-bottom: 20px;
+  }
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Card Shadows */
+.shadow-sm {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08) !important;
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+}
